@@ -1,0 +1,59 @@
+- name: install and update python 2.7
+  apt:
+    name: python2.7
+    state: latest
+  become: true
+
+- name: install and update python 3
+  apt:
+    name: python3
+    state: latest
+  become: true
+
+- name: Install and update pip
+  easy_install:
+    name: pip
+    state: latest
+  become: true
+
+- name: Install and update pip3
+  apt:
+    name: python3-pip
+    state: latest
+  become: true
+  
+- name: Upgrade PIP
+  pip:
+    name: pip
+
+- name: Upgrade PIP3
+  command: python3 -m pip install pip
+
+- name: Install pandas py3
+  pip:
+    name: pandas
+    executable: pip3
+  become: true
+
+- name: Install pandas py2
+  pip:
+    name: pandas
+    executable: pip
+  become: true
+
+- name: Install scikit-learn py3
+  command: python3 -m pip install scikit-learn
+  become: true
+
+- name: Install scikit-learn py2
+  command: python -m pip install scikit-learn
+  become: true
+
+- name: Install scikit-learn py3
+  command: python3 -m pip install numpy
+  become: true
+
+- name: Install scikit-learn py2
+  command: python -m pip install numpy
+  become: true
+  

@@ -1,0 +1,9 @@
+- hosts: localhost
+
+  tasks:
+    - include: tasks/python.yml
+    # - include: tasks/buster.yml
+    # - include: tasks/vscode.yml
+    # - include: tasks/go.yml
+    # - include: tasks/docker.yml
+    # - include: tasks/flutters.yml

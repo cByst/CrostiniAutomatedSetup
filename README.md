@@ -6,7 +6,7 @@ This repo is meant to automate the setup of the default crostini container (peng
 
 ## One-Liner
 ```bash
-REPO=https://github.com/cbyst/CrostiniAutomatedSetup bash <(curl -s $REPO
+REPO=https://raw.githubusercontent.com/cByst/CrostiniAutomatedSetup/master/startup.sh bash -c 'curl -o- $REPO | bash'
 ```
 
 ## Reuse
