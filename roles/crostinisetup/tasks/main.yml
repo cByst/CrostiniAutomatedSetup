@@ -1,10 +1,14 @@
 ---
-- include: go.yml
-  vars:
-    go_tarball: "go1.13.4.linux-amd64.tar.gz"
-    go_tarball_checksum: "sha256:692d17071736f74be04a72a06dab9cac1cd759377bd85316e52b2227604c004c"
-    go_version_target: "go version go1.13.4 linux/amd64"
-    set_go_path: true
-    go_download_location: "https://storage.googleapis.com/golang/go1.13.4.linux-amd64.tar.gz"
-- include: python.yml
+# - include: go.yml
+#   vars:
+#     go_tarball: "go1.13.4.linux-amd64.tar.gz"
+#     go_tarball_checksum: "sha256:692d17071736f74be04a72a06dab9cac1cd759377bd85316e52b2227604c004c"
+#     go_version_target: "go version go1.13.4 linux/amd64"
+#     set_go_path: true
+#     go_download_location: "https://storage.googleapis.com/golang/go1.13.4.linux-amd64.tar.gz"
+# - include: python.yml
 - include: docker.yml
+# - include: vscode.yml
+#   vars:
+#     visual_studio_code_package: 'code'
+#     visual_studio_code_version: ''
